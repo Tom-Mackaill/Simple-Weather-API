@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Project</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="form">
+            <form action="/weather" method="post">
+                <input type="text" name="city" id="city" placeholder="City Name">
+                <button>Get Weather</button>
+                <p>The weather in your City is...</p>
+            </form>
+        </div>
+        <div class="temp">
+            <% if(locals.data)  {%>
+                <h1><%= data.name %></h1>
+                <h1><%= data.main.temp %></h1>
+            <%}%> 
+        </div>
+        <div class="data">
+            <% if(locals.data)  {%>
+                <ul>
+                    <li>Humidity: <%= data.main.humidity %></li>
+                    <li>Feels like: <%= data.main.feels_like %></li>
+                </ul>
+            <%}%>
+        </div>
+
+        <% if(locals.error) {%>
+        <div class="error">
+            <%= error %>
+        </div>
+        <% } %>
+
+   
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>

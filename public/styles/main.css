@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../images/bluesky.avif);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    height: 700px;
+    background-color: #faf9f6;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input, button {
+    font-size: 22px;
+}
+
+.temp {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.temp h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+ul li {
+    list-style: none;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.data {
+    margin-left: 40px;
+    margin-top: 15px;
+}
